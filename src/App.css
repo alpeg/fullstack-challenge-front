@@ -1,0 +1,83 @@
+body {
+  overflow-y: scroll;
+}
+.App-header {
+  background-color: #fff2ce;
+  margin-bottom: 20px;
+}
+.App-header select {
+  background-color: #fffce4;
+}
+.App-header > .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.App-header > .container > * {
+  flex: 0 0 content;
+}
+.App-header .App-header-logo,
+.App-header .App-header-link {
+  text-decoration: none;
+  color: rgb(145, 0, 0);
+  display: inline-block;
+  padding: 4px 6px;
+  margin: 2px 8px;
+}
+
+.formContainer {
+  margin: 30px auto 100px;
+}
+
+.PizzaContainer {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-gap: 1rem;
+  max-width: 1500px;
+  margin: 30px auto 100px;
+}
+.PizzaContainer .card {
+  padding-top: 10px;
+}
+.PizzaContainer .card-text {
+  height: 96px;
+  overflow: hidden;
+}
+.PizzaContainer .card-img-top {
+  height: 200px;
+  object-fit: scale-down;
+}
+
+.Pizza-cart {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+}
+.Pizza-cart > div:nth-child(1) > .Pizza-cart-pic {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: scale-down;
+}
+.Pizza-cart > div:nth-child(1) {
+  width: 50px;
+  flex: 0 0 content;
+}
+.Pizza-cart > div:nth-child(2) {
+  padding-left: 15px;
+  width: 200px;
+  min-width: 200px;
+  flex: 0 0 content;
+}
+.Pizza-cart > div:nth-child(3) {
+  padding-left: 15px;
+  width: 120px;
+  flex: 0 0 content;
+}
+.Pizza-cart > div:nth-child(4) {
+  padding-left: 15px;
+  flex: 0 0 content;
+}
